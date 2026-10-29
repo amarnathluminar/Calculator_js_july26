@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #3d4b5b;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.calculator {
+    width: 250px;
+    padding: 18px;
+    background: #394757;
+    border-radius: 5px;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.25),
+        0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Input / Display */
+
+.display {
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    outline: none;
+    border-radius: 4px;
+
+    background: #f4f4f4;
+    color: #333;
+
+    font-size: 20px;
+    text-align: right;
+
+    padding: 8px 12px;
+    margin-bottom: 18px;
+}
+
+/* Button area */
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Buttons */
+
+button {
+    height: 48px;
+
+    border: none;
+    border-radius: 4px;
+
+    background: transparent;
+    color: #f1f1f1;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Operators */
+
+.operator {
+    color: #e8a94c;
+}
+
+/* AC button */
+
+.clear {
+    color: #ff7272;
+}
+
+/* Backspace */
+
+.backspace {
+    grid-column: 1;
+    color: white;
+    font-size: 22px;
+}

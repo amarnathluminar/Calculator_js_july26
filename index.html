@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="calculator">
+
+        <!-- Display -->
+        <input type="text" id="result" class="display" placeholder="0" readonly>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button onclick="displayCalcNumberScreen('7')">7</button>
+            <button onclick="displayCalcNumberScreen('8')" >8</button>
+            <button onclick="displayCalcNumberScreen('9')">9</button>
+            <button onclick="displayCalcNumberScreen('*')" class="multi">&#215</button>
+
+            <button onclick="displayCalcNumberScreen('4')">4</button>
+            <button onclick="displayCalcNumberScreen('5')">5</button>
+            <button onclick="displayCalcNumberScreen('6')">6</button>
+            <button onclick="displayCalcNumberScreen('-')" class="sub">&#8722</button>
+
+            <button onclick="displayCalcNumberScreen('1')">1</button>
+            <button onclick="displayCalcNumberScreen('2')">2</button>
+            <button onclick="displayCalcNumberScreen('3')">3</button>
+            <button onclick="displayCalcNumberScreen('+')" class="add">&#43</button>
+
+            <button onclick="clearAllInCalcScreen()" class="clear">AC</button>
+            <button onclick="displayCalcNumberScreen('0')">0</button>
+            <button onclick="displayCalcNumberScreen('/')" class="div">&#247</button>
+            <button onclick="evaluateValuesInCalcScreen()" class="equals">&#61</button>
+            <button onclick="deleteLastDigitInCalc()" class="backspace">&#9003</button>
+
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
